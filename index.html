@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Interest Tax Deduction Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mortgage Interest Tax Deduction Calculator</h1>
+    <p>Calculate your potential tax savings from mortgage interest deduction.</p>
+  </header>
+
+  <section id="calculator">
+    <h2>Calculator</h2>
+    <form id="taxForm">
+      <div class="form-group">
+        <label for="mortgageAmount">Mortgage Loan Amount ($):</label>
+        <input type="number" id="mortgageAmount" placeholder="Enter mortgage amount">
+      </div>
+
+      <div class="form-group">
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate">
+      </div>
+
+      <div class="form-group">
+        <label for="taxRate">Tax Rate (%):</label>
+        <input type="number" id="taxRate" placeholder="Enter tax rate">
+      </div>
+
+      <div class="form-group">
+        <label for="loanTerm">Loan Term (years):</label>
+        <input type="number" id="loanTerm" placeholder="Enter loan term">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h3>Estimated Tax Deduction</h3>
+      <p id="deductionAmount">$0.00</p>
+    </div>
+  </section>
+
+  <section id="instructions">
+    <h2>How to Use the Mortgage Interest Tax Deduction Calculator</h2>
+    <p id="instructionsText"></p>
+  </section>
+  <hr>
+ <p style="text-align: center;">@ 2024 Mortgage Interest Tax Deduction Calculator</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
